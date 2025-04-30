@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <Section class="sla">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h1>Bookshelf</h1>
+            </div>
+            <div class="navbar-container">         
+                <div class="navbar-menu-container" id="navbarMenu">
+                    <ul class="navbar-menu">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li>
+                        <a href="livros.html">LIVROS</a>
+                        <div class="dropdown-menu">
+                            <a href="#">Romances</a>
+                            <a href="#">Ficção</a>
+                            <a href="#">Terror</a>
+                            <a href="#">Fantasia</a>
+                        </div>
+                    </li>
+                    <li>
+                    <a href="">ESCRITORES</a>
+                    <div class="dropdown-menu">
+                        <a href="independentes.html">Independentes</a>
+                        <a href="editora.html">Editoras</a>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <main>
+            <section class="banner">
+                <h3><b>ENCONTRE OS MELHORES ESCRITORES INDEPENDENTES</b></h3>
+                <a href="independentes.html" class="cta-button">VOLTAR</a>
+            </section>
+        </main>
+        
+    </Section>
+    <div class="container">
+        <div class="text-section">
+            <h1><b>CAROLINE MUNHOZ</b></h1>
+            <hr>
+            <p>
+                Carolina Munhóz é uma jornalista, roteirista e romancista brasileira, reconhecida principalmente por sua 
+                atuação em literatura fantástica. Ela foi eleita “melhor escritora” pelo Prêmio Jovem Brasileiro em 2011 e 
+                também recebeu o prêmio “bestauthor” pelo Vox Populi do Shorty Awards, um prêmio norte-americano. 
+                Atualmente, Carolina trabalha como roteirista em Los Angeles, Califórnia, para séries televisivas, 
+                além de ser autora de best-sellers no gênero fantasia. <br>
+                Nascida em São José do Rio Preto, Carolina cometeu bullying na adolescência por ser fã da cultura nerd, 
+                o que influenciou bastante em sua escrita. Ela atribuída às fadas, tema recorrente em seus livros, 
+                um papel importante na superação desses problemas pessoais. Seu interesse por fadas surgiu de um sonho em que 
+                uma fada contou a história de seu primeiro livro. Esse tema está presente em obras como "A Fada", 
+                "O Inverno das Fadas" e "Feérica" ​​- este último lançado na Bienal do Livro do Rio de Janeiro, onde a 
+                personagem principal, Violet, enfrenta desafios semelhantes aos da autora, incluindo o bullying e a 
+                paixão por reality shows musicais. <br>
+                Carolina iniciou sua trajetória literária ainda jovem, escrevendo seu primeiro livro "A Fada" em 2006. 
+                Antes de ser publicado, trabalhou em uma livraria e distribuidora, onde teve contato com o mercado editorial 
+                e com escritores como André Vianco. Após algumas tentativas e contratos com editoras menores, ela firmou 
+                parceria com a Editora Novo Século, que relançou "A Fada" em 2011 com uma versão revisada e ampliada. 
+                Sua carreira ganhou impulso com a participação em eventos literários, entrevistas em diversos veículos de 
+                comunicação e encontros com escritores renomados como Paulo Coelho, Eduardo Spohr e Raphael Draccon, 
+                com quem é casado. <br>
+                Além da escrita, Carolina Munhóz também é roteirista e produtora, tendo colaborado em produções para Netflix 
+                e escrita para universos da Marvel e DC Comics, além de séries brasileiras como "Cidade Invisível" e 
+                "O Escolhido". <br>
+                Carolina se destaca como uma das poucas mulheres no cenário da literatura fantástica brasileira, 
+                um mercado predominantemente masculino, e tem um público diversificado, incluindo leitores gays, 
+                aos quais ela dedica atenção especial em suas histórias, abordando temas de diversidade e acessíveis. <br>
+             </p>
+             
+        </div>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <h1>BOA LEITURA</h1>
+            <p>Obrigado .</p>
+        </div>
+        <p>Copyright &copy; 2025 <a href="#">Bookshelf</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const mobileToggle = document.getElementById('mobileToggle');
+          const navbarMenu = document.getElementById('navbarMenu');
+          
+          mobileToggle.addEventListener('click', function() {
+            navbarMenu.classList.toggle('active');
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
+            const indicatorsContainer = document.getElementById('indicators');
+            const autoplayButton = document.getElementById('autoplayButton');
+            
+            let currentIndex = 0;
+            let isAutoplay = true;
+            let autoplayInterval;
+            
+            // Setup indicators
+            slides.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.classList.add('indicator');
+                if (index === 0) indicator.classList.add('active');
+                indicator.addEventListener('click', () => goToSlide(index));
+                indicatorsContainer.appendChild(indicator);
+            });
+            
+            // Functions to navigate slides
+            function updateTrackPosition() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // Update indicators
+                document.querySelectorAll('.indicator').forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
+            }
+            
+            function goToSlide(index) {
+                currentIndex = index;
+                updateTrackPosition();
+            }
+            
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateTrackPosition();
+            }
+            
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateTrackPosition();
+            }
+            
+            // Event listeners
+            nextButton.addEventListener('click', nextSlide);
+            prevButton.addEventListener('click', prevSlide);
+            
+            // Autoplay functionality
+            function startAutoplay() {
+                autoplayInterval = setInterval(nextSlide, 3000);
+            }
+            
+            function toggleAutoplay() {
+                if (isAutoplay) {
+                    clearInterval(autoplayInterval);
+                    autoplayButton.textContent = 'Iniciar Reprodução';
+                    autoplayButton.classList.add('paused');
+                } else {
+                    startAutoplay();
+                    autoplayButton.textContent = 'Pausar Reprodução';
+                    autoplayButton.classList.remove('paused');
+                }
+                isAutoplay = !isAutoplay;
+            }
+            
+            autoplayButton.addEventListener('click', toggleAutoplay);
+            
+            // Initialize autoplay
+            startAutoplay();
+            
+            // Additional: keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowLeft') prevSlide();
+                if (e.key === 'ArrowRight') nextSlide();
+            });
+        });
+
+      </script>
+
+</body>
+</html>
